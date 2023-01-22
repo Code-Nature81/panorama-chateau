@@ -4,178 +4,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panoram</title>
+    <title>Panorama</title>
 </head>
+
+<header>
+    <img src="Projet111.png" style="width: 60px; margin-left:5px ;">
+</header>
 <style>
-
-body {
-    margin: 0;
-    padding: 0;
+    html, body{
+        margin: 0;
+        padding: 0;
+        
+        
     
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
-/* .arrow {
-    width: 0px;
-    height: 0px;
-    background: orange; 
-    border: 1px solid #000;
 
-    border-top: 100px solid crimson;
-    border-bottom: 100px solid transparent;
-    border-right: 70px solid transparent;
-    border-left: 70px solid transparent;
-} */
+        
+       
+        
+        
 
-.tooltip {
-    position: absolute;
-    background: rgba(51, 51, 51, 0.76);
-   /* border: 4px solid #666;*/
-    border-radius:30px;
-    width: 300px;
-    padding: 20px;
-    color: #f1f1f1;
-    font-size: 17px;
+        
+        
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
 
-    top: 168px;
-    left: 1710px;
-    /* display: none; */
-    opacity: 0;
-    pointer-events: none;
-    z-index:10;
     
     
-}
-.tooltip::after, .tooltip::before {
-    content: "";
-    bottom: 100%;
-    left: 50%;
-    border: solid transparent;
-    height: 0;
-    width: 0;
-    position: absolute;
+    /* .arrow {
+        width: 0px;
+        height: 0px;
+        background: orange; 
+        border: 1px solid #000;
     
-}
-.tooltip::after {
-    border-bottom-color: rgba(51, 51, 51, 0.77);
-    border-width: 25px;
-    margin-left: -25px;
+        border-top: 100px solid crimson;
+        border-bottom: 100px solid transparent;
+        border-right: 70px solid transparent;
+        border-left: 70px solid transparent;
+    } */
     
-}
-.tooltip::before {
-   /* border-bottom-color: #666;*/
-    border-width: 30px;
-    margin-left: -30px;
-}
-
-.txt {
-    width: 180px;
-    padding: 10px;
-    font-size: 22px;
-    margin: 100px auto;
-    position: relative;
-}
-.btn {
-    display: inline;
-    position: relative;
-}
-.btn img {
-    position: relative;
-    top: 4px;
-    width: 30px;
-}
-.btn:hover .tooltip{
-    /* display: block; */
-    pointer-events: all;
-    opacity: 1;
-    transition: all 0.4s ease;
-}
-
-.img2{
-    height: 100px;
-    position:absolute;
-    z-index: 10;
-    left: 1850px;
-    margin-bottom: 20px;
+    .tooltip {
+        position: absolute;
+        background: rgba(51, 51, 51, 0.76);
+       /* border: 4px solid #666;*/
+        border-radius:30px;
+        width: 300px;
+        padding: 20px;
+        color: #f1f1f1;
+        font-size: 17px;
     
-}
-
-.img1{
+        top: 168px;
+        left: 1710px;
+        /* display: none; */
+        opacity: 0;
+        pointer-events: none;
+        z-index:10;
+        
+        
+    }
+    .tooltip::after, .tooltip::before {
+        content: "";
+        bottom: 100%;
+        left: 50%;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        
+    }
+    .tooltip::after {
+        border-bottom-color: rgba(51, 51, 51, 0.77);
+        border-width: 25px;
+        margin-left: -25px;
+        
+    }
+    .tooltip::before {
+       /* border-bottom-color: #666;*/
+        border-width: 30px;
+        margin-left: -30px;
+    }
     
-    height: 250px;
-    position:absolute;
-    z-index: 10;
-}
-/*---------------------------------------------------------------------*/
-
-.tooltip2 {
-    position: absolute;
-    background: rgba(51, 51, 51, 0.76);
-   /* border: 4px solid #666;*/
-    border-radius:30px;
-    width: 300px;
-    padding: 20px;
-    color: #f1f1f1;
-    font-size: 17px;
-
-    top: 170px;
-    left: 1790px;
-    /* display: none; */
-    opacity: 0;
-    pointer-events: none;
-    z-index:10;
+    .txt {
+        width: 180px;
+        padding: 10px;
+        font-size: 22px;
+        margin: 100px auto;
+        position: relative;
+    }
+    .btn {
+        display: inline;
+        position: relative;
+    }
+    .btn img {
+        position: relative;
+        top: 4px;
+        width: 30px;
+    }
+    .btn:hover .tooltip{
+        /* display: block; */
+        pointer-events: all;
+        opacity: 1;
+        transition: all 0.4s ease;
+    }
     
+    .img2{
+        height: 100px;
+        position:absolute;
+        z-index: 10;
+        left: 1850px;
+        margin-bottom: 20px;
+        
+    }
     
-}
-.tooltip2::after, .tooltip2::before {
-    content: "";
-    bottom: 100%;
-    left: 50%;
-    border: solid transparent;
-    height: 0;
-    width: 0;
-    position: absolute;
+    .img1{
+        
+        height: 250px;
+        position:absolute;
+        z-index: 10;
+    }
+    /*---------------------------------------------------------------------*/
     
-}
-.tooltip2::after {
-    border-bottom-color: rgba(51, 51, 51, 0.77);
-    border-width: 25px;
-    margin-left: -25px;
+    .tooltip2 {
+        position: absolute;
+        background: rgba(51, 51, 51, 0.76);
+       /* border: 4px solid #666;*/
+        border-radius:30px;
+        width: 300px;
+        padding: 20px;
+        color: #f1f1f1;
+        font-size: 17px;
     
-}
-.tooltip2::before {
-   /* border-bottom-color: #666;*/
-    border-width: 30px;
-    margin-left: -30px;
-}
-
-.btn2 {
-    display: inline;
-    position: relative;
-}
-.btn2 img {
-    position: relative;
-    top: -31px;
-    width: 60px;
-}
-.btn2:hover .tooltip2{
-    /* display: block; */
-    pointer-events: all;
-    opacity: 1;
-    transition: all 0.4s ease;
-}
-
-.img3{
-    height: 100px;
-    position:absolute;
-    z-index: 10;
-    left: 1900px;
-    margin-top: 24px;
+        top: 170px;
+        left: 1790px;
+        /* display: none; */
+        opacity: 0;
+        pointer-events: none;
+        z-index:10;
+        
+        
+    }
+    .tooltip2::after, .tooltip2::before {
+        content: "";
+        bottom: 100%;
+        left: 50%;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        
+    }
+    .tooltip2::after {
+        border-bottom-color: rgba(51, 51, 51, 0.77);
+        border-width: 25px;
+        margin-left: -25px;
+        
+    }
+    .tooltip2::before {
+       /* border-bottom-color: #666;*/
+        border-width: 30px;
+        margin-left: -30px;
+    }
     
-}
-
-/*...................................................................................*/
-.tooltip3 {
+    .btn2 {
+        display: inline;
+        position: relative;
+    }
+    .btn2 img {
+        position: relative;
+        top: -31px;
+        width: 60px;
+    }
+    .btn2:hover .tooltip2{
+        /* display: block; */
+        pointer-events: all;
+        opacity: 1;
+        transition: all 0.4s ease;
+    }
+    
+    .img3{
+        height: 100px;
+        position:absolute;
+        z-index: 10;
+        left: 1900px;
+        margin-top: 24px;
+        
+    }
+    
+    /*...................................................................................*/
+    .tooltip3 {
     position: absolute;
     background: rgba(51, 51, 51, 0.76);
    /* border: 4px solid #666;*/
@@ -241,19 +259,19 @@ body {
     margin-top: -80px;
     
 }
-
-/*-------------------------------------------------------------------------*/
-/*.img5{
-    height: 60px;
-    position:absolute;
-    z-index: 10;
-    left: 1395px;
-    margin-top: -131px;
     
-}
-
-/*---------------------------------------------------------------------------*/
-.tooltip2 {
+    /*-------------------------------------------------------------------------*/
+    .img5{
+        height: 60px;
+        position:absolute;
+        z-index: 10;
+        left: 1395px;
+        margin-top: -131px;
+        
+    }
+    
+    /*---------------------------------------------------------------------------*/
+    .tooltip5 {
     position: absolute;
     background: rgba(51, 51, 51, 0.76);
    /* border: 4px solid #666;*/
@@ -264,74 +282,7 @@ body {
     font-size: 17px;
 
     top: 170px;
-    left: 1790px;
-    /* display: none; */
-    opacity: 0;
-    pointer-events: none;
-    z-index:10;
-    
-    
-}
-.tooltip2::after, .tooltip2::before {
-    content: "";
-    bottom: 100%;
-    left: 50%;
-    border: solid transparent;
-    height: 0;
-    width: 0;
-    position: absolute;
-    
-}
-.tooltip2::after {
-    border-bottom-color: rgba(51, 51, 51, 0.77);
-    border-width: 25px;
-    margin-left: -25px;
-    
-}
-.tooltip2::before {
-   /* border-bottom-color: #666;*/
-    border-width: 30px;
-    margin-left: -30px;
-}
-
-.btn2 {
-    display: inline;
-    position: relative;
-}
-.btn2 img {
-    position: relative;
-    top: -31px;
-    width: 60px;
-}
-.btn2:hover .tooltip2{
-    /* display: block; */
-    pointer-events: all;
-    opacity: 1;
-    transition: all 0.4s ease;
-}
-
-.img3{
-    height: 100px;
-    position:absolute;
-    z-index: 10;
-    left: 1900px;
-    margin-top: 24px;
-    
-}
-
-/*...................................................................................*/
-.tooltip5 {
-    position: absolute;
-    background: rgba(51, 51, 51, 0.76);
-   /* border: 4px solid #666;*/
-    border-radius:30px;
-    width: 300px;
-    padding: 20px;
-    color: #f1f1f1;
-    font-size: 17px;
-
-    top: 170px;
-    left: 1680px;
+    left: 1615px;
     /* display: none; */
     opacity: 0;
     pointer-events: none;
@@ -381,13 +332,13 @@ body {
     height: 60px;
     position:absolute;
     z-index: 10;
-    left: 1950px;
+    left: 1850px;
     margin-top: 15px;
     
 }
-
-/*------------------------------------------------------------------------*/
-.tooltip6 {
+    /*------------------------------------------------------------------------*/
+    
+    .tooltip6 {
     position: absolute;
     background: rgba(51, 51, 51, 0.76);
    /* border: 4px solid #666;*/
@@ -398,7 +349,7 @@ body {
     font-size: 17px;
 
     top: 170px;
-    left: 1060px;
+    left: 1000px;
     /* display: none; */
     opacity: 0;
     pointer-events: none;
@@ -448,13 +399,15 @@ body {
     height: 30px;
     position:absolute;
     z-index: 10;
-    left: 1360px;
+    left: 1300px;
     margin-top: -100px;
     
 }
-
-/*-----------------------------------------------------------------------------*/
-.tooltip7 {
+    
+    /*-----------------------------------------------------------------------------*/
+    
+    
+    .tooltip7 {
     position: absolute;
     background: rgba(51, 51, 51, 0.76);
    /* border: 4px solid #666;*/
@@ -465,7 +418,7 @@ body {
     font-size: 17px;
 
     top: 170px;
-    left: -125px;
+    left: 170px;
     /* display: none; */
     opacity: 0;
     pointer-events: none;
@@ -501,7 +454,7 @@ body {
 }
 .btn7 img {
     position: relative;
-    top: 25px;
+    top: -25px;
     width: 60px;
 }
 .btn7:hover .tooltip7{
@@ -515,181 +468,244 @@ body {
     height: 30px;
     position:absolute;
     z-index: 10;
-    left: -145px;
+    left: 105px;
     margin-top: -15px;
     
 }
-
-/*--------------------------------------------------------------------------------*/
-.tooltip8 {
-    position: absolute;
-    background: rgba(51, 51, 51, 0.76);
-   /* border: 4px solid #666;*/
-    border-radius:30px;
-    width: 300px;
-    padding: 20px;
-    color: #f1f1f1;
-    font-size: 17px;
-
-    top: 170px;
-    left: 185px;
-    /* display: none; */
-    opacity: 0;
-    pointer-events: none;
-    z-index:10;
+    /*--------------------------------------------------------------------------------*/
+    .tooltip8 {
+        position: absolute;
+        background: rgba(51, 51, 51, 0.76);
+       /* border: 4px solid #666;*/
+        border-radius:30px;
+        width: 300px;
+        padding: 20px;
+        color: #f1f1f1;
+        font-size: 17px;
     
-    
-}
-.tooltip8::after, .tooltip8::before {
-    content: "";
-    bottom: 100%;
-    left: 50%;
-    border: solid transparent;
-    height: 0;
-    width: 0;
-    position: absolute;
-    
-}
-.tooltip8::after {
-    border-bottom-color: rgba(51, 51, 51, 0.77);
-    border-width: 25px;
-    margin-left: -25px;
-    
-}
-.tooltip8::before {
-   /* border-bottom-color: #666;*/
-    border-width: 30px;
-    margin-left: -30px;
-}
-
-.btn8 {
-    display: inline;
-    position: relative;
-}
-.btn8 img {
-    position: relative;
-    top: -45px;
-    width: 60px;
-}
-.btn8:hover .tooltip8{
-    /* display: block; */
-    pointer-events: all;
-    opacity: 1;
-    transition: all 0.4s ease;
-}
-
-.img9{
-    height: 60px;
-    position:absolute;
-    z-index: 10;
-    left: 447px;
-    margin-top: -105px;
-    
-}
-
-</style>
-<header>
-    <img src="Projet111.png" style="width: 60px; margin-left:5px ;">
-</header>
-<body> 
-
-            <img class="img1"src="panorama-chateau-gimp2.jpg"  border="0" />
-        <div class="btn">
-                <img class="img2" src="Logo_monument_historique.svg" alt=""> <!--tour de fa-->
-
-            <div class="tooltip">
-                <a><span><img src ="https://idata.over-blog.com/0/23/09/69/chateau/11-30-34-48/11/fa/11-fa-05.jpg"alt="" style="width:250px; height:150px; padding-left:20px; margin-top: -10px; "/>
-                    <br><br>Le hameau de Fa située dans le département de l’Aude et compte 373 habitants (2013) appelés les Fanols .
-                    La commune possède une tour Wisigothe , restes d’un château . Le rempart extérieur très abîmé et parfois inexistant ,  a l’origine ce ne devait pas être le château d’un seigneur mais d’une garnison , cela explique l’absence de texte historique</br></br><a href="https://code-nature81.github.io/Tour-de-Fa/" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Visite virtuelle</span></a> 
+        top: 170px;
+        left: 30px;
+        /* display: none; */
+        opacity: 0;
+        pointer-events: none;
+        z-index:10;
         
-                
+        
+    }
+    .tooltip8::after, .tooltip8::before {
+        content: "";
+        bottom: 100%;
+        left: 50%;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        
+    }
+    .tooltip8::after {
+        border-bottom-color: rgba(51, 51, 51, 0.77);
+        border-width: 25px;
+        margin-left: -25px;
+        
+    }
+    .tooltip8::before {
+       /* border-bottom-color: #666;*/
+        border-width: 30px;
+        margin-left: -30px;
+    }
+    
+    .btn8 {
+        display: inline;
+        position: relative;
+    }
+    .btn8 img {
+        position: relative;
+        top: -31px;
+        width: 60px;
+    }
+    .btn8:hover .tooltip8{
+        /* display: block; */
+        pointer-events: all;
+        opacity: 1;
+        transition: all 0.4s ease;
+    }
+    
+    .img9{
+        height: 60px;
+        position:absolute;
+        z-index: 10;
+        left: 140px;
+        margin-top: -105px;
+        
+    }
+
+
+
+
+    .tooltip11 {
+        position: absolute;
+        background: rgba(51, 51, 51, 0.76);
+       /* border: 4px solid #666;*/
+        border-radius:30px;
+        width: 300px;
+        padding: 20px;
+        color: #f1f1f1;
+        font-size: 17px;
+    
+        top: 170px;
+        left: 30px;
+        /* display: none; */
+        opacity: 0;
+        pointer-events: none;
+        z-index:10;
+        
+        
+    }
+    .tooltip11::after, .tooltip11::before {
+        content: "";
+        bottom: 100%;
+        left: 50%;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        
+    }
+    .tooltip11::after {
+        border-bottom-color: rgba(51, 51, 51, 0.77);
+        border-width: 25px;
+        margin-left: -25px;
+        
+    }
+    .tooltip11::before {
+       /* border-bottom-color: #666;*/
+        border-width: 30px;
+        margin-left: -30px;
+    }
+    
+    .btn11 {
+        display: inline;
+        position: relative;
+    }
+    .btn11 img {
+        position: relative;
+        top: -31px;
+        width: 60px;
+    }
+    .btn11:hover .tooltip11{
+        /* display: block; */
+        pointer-events: all;
+        opacity: 1;
+        transition: all 0.4s ease;
+    }
+    
+    .img11{
+        height: 60px;
+        position:absolute;
+        z-index: 10;
+        left: 140px;
+        margin-top: -105px;
+        
+    }
+    
+            
+    </style>
+    <body> 
+        
+                <img class="img1"src="panorama-chateau-gimp2.jpg"  border="0" />
+            <div class="btn">
+                    <img class="img2" src="Logo_monument_historique.svg" alt=""> <!--tour de fa-->
+    
+                <div class="tooltip">
+                    <a><span><img src ="https://idata.over-blog.com/0/23/09/69/chateau/11-30-34-48/11/fa/11-fa-05.jpg"alt="" style="width:250px; height:150px; padding-left:20px; margin-top: -10px; "/>
+                        <br><br>Le hameau de Fa située dans le département de l’Aude et compte 373 habitants (2013) appelés les Fanols .
+                        La commune possède une tour Wisigothe , restes d’un château . Le rempart extérieur très abîmé et parfois inexistant ,  a l’origine ce ne devait pas être le château d’un seigneur mais d’une garnison , cela explique l’absence de texte historique</br></br><a href="https://code-nature81.github.io/Tour-de-Fa/" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Visite virtuelle</span></a> 
+            
+                    
+                </div>
             </div>
-        </div>
-
-        <div class="btn2">
-            <img class="img3" src="village1.svg" alt=""> <!--couiza-->
-
-        <div class="tooltip2">
-            <a><span><img src ="https://upload.wikimedia.org/wikipedia/commons/7/7b/CHATEAU_DE_COUIZA_AUDE_-_CHATEAU_DES_DUCS_DE_JOYEUSES.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: 30px; "/>
-            Couiza est situé à l’embouchure de l’Aude et de la Salz, au coeur de la Haute Vallée de l’Aude et au carrefour du pays Cathare. C’est une petit ville dynamique riche en patrimoine naturel et historique...</br></br><a href="https://code-nature81.github.io/Couiza-panoramique/" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
     
-        </div>
-        </div>
+            <div class="btn2">
+                <img class="img3" src="village1.svg" alt=""> <!--couiza-->
     
-
-        <div class="btn3">
-            <img class="img4" src="water.svg" alt=""> <!--sals-->
-
-        <div class="tooltip3">
-                <a><span><img src ="https://www.eau-salee-sougraigne.fr/images/source-entiere.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: -70px; "/><br><br><br><br><br><br>
-                    Ce sont plusieurs filets d’eau salée qui lui donnent naissance. Ils s’échappent du terrain salifère au sommet d'une petite vallée orientée Est-Ouest.
-                    Ces sources salées reçoivent rapidement des griffons d'eau douce issus des vallons voisins, l’ensemble forme la Sals.</br></br><a href="https://www.eau-salee-sougraigne.fr/index.php/le-domaine/la-sals" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
-        </div>
-        </div>
-
-        <!--<div class="btn4">
-            <img class="img5" src="montagne1.svg" alt="">               pas de loup
-
-        <div class="tooltip3">
-                <a><span><img src ="https://www.eau-salee-sougraigne.fr/images/source-entiere.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: -70px; "/><br><br><br><br><br><br>
-                    Ce sont plusieurs filets d’eau salée qui lui donnent naissance. Ils s’échappent du terrain salifère au sommet d'une petite vallée orientée Est-Ouest.
-                    Ces sources salées reçoivent rapidement des griffons d'eau douce issus des vallons voisins, l’ensemble forme la Sals.</br></br><a href="https://www.eau-salee-sougraigne.fr/index.php/le-domaine/la-sals" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
-        </div>
-        </div>-->
+            <div class="tooltip2">
+                <a><span><img src ="https://upload.wikimedia.org/wikipedia/commons/7/7b/CHATEAU_DE_COUIZA_AUDE_-_CHATEAU_DES_DUCS_DE_JOYEUSES.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: 30px; "/>
+                Couiza est situé à l’embouchure de l’Aude et de la Salz, au coeur de la Haute Vallée de l’Aude et au carrefour du pays Cathare. C’est une petit ville dynamique riche en patrimoine naturel et historique...</br></br><a href="https://code-nature81.github.io/Couiza-panoramique/" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
         
-        <div class="btn5">
-            <img class="img6" src="village1.svg" alt=""> <!--montazels-->
+            </div>
+            </div>
+        
+    
+            <div class="btn3">
+                <img class="img4" src="water.svg" alt=""> <!--sals-->
+                <div class="tooltip3">
+                    <a><span><img src ="https://www.eau-salee-sougraigne.fr/images/source-entiere.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: -70px; "/><br><br><br><br><br><br>
+                        Ce sont plusieurs filets d’eau salée qui lui donnent naissance. Ils s’échappent du terrain salifère au sommet d'une petite vallée orientée Est-Ouest.
+                        Ces sources salées reçoivent rapidement des griffons d'eau douce issus des vallons voisins, l’ensemble forme la Sals.</br></br><a href="https://www.eau-salee-sougraigne.fr/index.php/le-domaine/la-sals" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
+                </div>
+            </div>
+    
+            <div class="btn8">
+                <img class="img9" src="montagne1.svg" alt=""> <!--cardou-->
+                <div class="tooltip8">
+                    <a><span><img src ="https://i.pinimg.com/originals/52/0a/8e/520a8e19a317f0e58bacc7f939370ed2.jpg" alt="" style="width:280px; height:110px; padding-left:10px; margin-top: 40px; "/><br>
+                        Son emplacement est priviligié, sur une terre ancestrale en face de Blanchefort, sa forme arrondie est très caractéristique. La présence d'anciennes mines, favorisent les légendes au-dela des siècles. En entrant dans le 
+                    vallon, le Puech Cardou se trouve a gauche et le château de Blanchefort haut perché, à droite. Vous êtes a la porte de Rennes-les-Bains.</br></br><a href="http://www.rennes-le-chateau-archive.com/cardou_1.php" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
+            </div>
 
-        <div class="tooltip5">
-                <a><span><img src ="Montazels.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: 40px; "/><br>
-                    Elle appartient à l'unité urbaine d'Espéraza et fait partie de l'aire d'attraction de Limoux. Ses habitants sont appelés les Montazelois ou Montazeloises.
+            </div>
+            
+            <div class="btn5">
+                <img class="img6" src="village1.svg" alt=""> <!--montazels-->
+            <div class="tooltip5">
+                    <a><span><img src ="Montazels.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: 40px; "/><br>
+                        Elle appartient à l'unité urbaine d'Espéraza et fait partie de l'aire d'attraction de Limoux. Ses habitants sont appelés les Montazelois ou Montazeloises.
+                        Le patrimoine architectural de la commune comprend un immeuble protégé au titre des monuments historiques : la Fontaine, inscrite en 1951.</br></br><a href="https://fr.wikipedia.org/wiki/Montazels" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
+            </div>
+            </div>
+    
+            <div class="btn6">
+                <img class="img7" src="Logo_monument_historique.svg" alt=""> <!--rennes le chateau-->
+            <div class="tooltip6">
+                    <a><span><img src ="https://www.rennes-le-chateau.fr/wp-content/uploads/2020/04/91342488_229141775162200_5947943678147297280_n.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: 80px; "/><br>
+                        Perché sur sa colline au cœur de la Haute Vallée de l’Aude, le petit village de Rennes-le-Château n’a encore rien dévoilé de ses mystères…
+    
+                        Découvrez ce lieu hors du temps et l’étonnante histoire de Bérenger Saunière, modeste curé de campagne qui transforma à jamais le destin de cette petite commune sans histoire..</br></br><a href="https://www.rennes-le-chateau.fr/" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
+            </div>
+            </div>
+    
+            <div class="btn7">
+                <img class="img8" src="Logo_monument_historique.svg" alt=""> <!--blanchefort-->
+            <div class="tooltip7">
+                    <a><span><img src ="https://idata.over-blog.com/0/23/09/69/chateau/11-30-34-48/11/blanchefort/blanchefort-03.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: 20px; "/><br><br><br>
+                        Elle n'est pas facile à trouver cette ruine. Si vous ne connaissez pas son existence ou si vous n'avez pas une carte précise, vous passerez devant sans lever la tête.
+    
+                        Le site médiéval est sur un pic, sur la route entre Rennes les Bains, en direction de Peyrepertuse. Plus exactement au Sud-Est de Cassaignes, sur la butte proche du hameau de Pachevan.
+                     
+                        Cette "beauté de pierres" est dans le "triangle des châteaux Cathare".</br></br><a href="https://chateauruine.fr/article-2386837.html" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
+            </div>
+            </div>
 
-Le patrimoine architectural de la commune comprend un immeuble protégé au titre des monuments historiques : la Fontaine, inscrite en 1951.</br></br><a href="https://fr.wikipedia.org/wiki/Montazels" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
-        </div>
-        </div>
-
-        <div class="btn6">
-            <img class="img7" src="Logo_monument_historique.svg" alt=""> <!--rennes le chateau-->
-
-        <div class="tooltip6">
-                <a><span><img src ="https://www.rennes-le-chateau.fr/wp-content/uploads/2020/04/91342488_229141775162200_5947943678147297280_n.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: 80px; "/><br>
-                    Perché sur sa colline au cœur de la Haute Vallée de l’Aude, le petit village de Rennes-le-Château n’a encore rien dévoilé de ses mystères…
-
-                    Découvrez ce lieu hors du temps et l’étonnante histoire de Bérenger Saunière, modeste curé de campagne qui transforma à jamais le destin de cette petite commune sans histoire..</br></br><a href="https://www.rennes-le-chateau.fr/" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
-        </div>
-        </div>
-
-        <div class="btn7">
-            <img class="img8" src="Logo_monument_historique.svg" alt=""> <!--blanchefort-->
-         <div class="tooltip7">
-                <a><span><img src ="https://idata.over-blog.com/0/23/09/69/chateau/11-30-34-48/11/blanchefort/blanchefort-03.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: -20px; "/><br><br><br>
+            
+           <!-- <div class="btn11">
+                <img class="img11" src="Logo_monument_historique.svg" alt=""> rennes le chateau
+            <div class="tooltip11">
+                <a><span><img src ="https://idata.over-blog.com/0/23/09/69/chateau/11-30-34-48/11/blanchefort/blanchefort-03.jpg" alt="" style="width:210px; height:170px; padding-left:50px; margin-top: 20px; "/><br><br><br>
                     Elle n'est pas facile à trouver cette ruine. Si vous ne connaissez pas son existence ou si vous n'avez pas une carte précise, vous passerez devant sans lever la tête.
 
                     Le site médiéval est sur un pic, sur la route entre Rennes les Bains, en direction de Peyrepertuse. Plus exactement au Sud-Est de Cassaignes, sur la butte proche du hameau de Pachevan.
                  
                     Cette "beauté de pierres" est dans le "triangle des châteaux Cathare".</br></br><a href="https://chateauruine.fr/article-2386837.html" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
         </div>
+            </div>-->
+
+    
             
-
-        </div>
-
-        <div class="btn8">
-            <img class="img9" src="montagne1.svg" alt=""> <!--le cardou-->
-        <div class="tooltip8">
-                <a><span><img src ="https://i.pinimg.com/originals/52/0a/8e/520a8e19a317f0e58bacc7f939370ed2.jpg" alt="" style="width:280px; height:110px; padding-left:10px; margin-top: 40px; "/><br>
-                    Son emplacement est priviligié, sur une terre ancestrale en face de Blanchefort, sa forme arrondie est très caractéristique. La présence d'anciennes mines, favorisent les légendes au-dela des siècles. En entrant dans le 
-                vallon, le Puech Cardou se trouve a gauche et le château de Blanchefort haut perché, à droite. Vous êtes a la porte de Rennes-les-Bains.</br></br><a href="http://www.rennes-le-chateau-archive.com/cardou_1.php" style="text-decoration-color: blanchedalmond; color: blanchedalmond;"> ICI: Historique</span></a>
-        </div>
-
-
-        </div>
-
-
-
-
-
-
-
-
-</body>
-</html>
+    
+           
+    
+    
+    
+    
+    </body>
+    </html>
