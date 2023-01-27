@@ -1,3 +1,11 @@
+.esp{
+    width: 35px; margin-left:30px ; margin-top: -100px;
+}
+
+.ang{
+    width: 35px; margin-left:30px ; margin-top: -100px
+}
+
 .container{
     height: 300px;
     width: 300px;
@@ -568,3 +576,30 @@ a.contact-button5{
     text-align:left;
     border-radius: 0.5rem;
 }
+
+@media only screen and (max-width:380px){
+    
+
+    .esp{
+        margin: 300;
+        display: inline;
+        margin-left: 300px;
+        margin-bottom: 19px ;
+    }
+}
+
+@media only screen and (max-width:280px){
+    
+
+    .ang{
+        margin: 300;
+        display: inline;
+        margin-left: 250px;
+        margin-bottom: 0px ;
+    }
+}
+
+    
+
+
+    
