@@ -300,6 +300,7 @@ transition: all 0.4s ease;
 
 a.buttonRenn{
     width: 120px;
+    height: 60;
     background: url("Logo_monument_historique.svg");
     position: absolute;
     bottom: -85px;
@@ -313,7 +314,7 @@ a.buttonRenn{
     background-color: #4e4b4b00;
     color: rgb(2, 2, 2);
     background-size: 25px;
-    background-position: 90px;
+    background-position: 110px;
     /*background-position-y: 10px;*/
     background-repeat: no-repeat;
     
